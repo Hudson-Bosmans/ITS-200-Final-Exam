@@ -1,17 +1,39 @@
-h1	{	font-family: Sans-Serif, Helvectica;
+/* We have centered the h1 header */
+h1	{	position: relative;
+		font-family: Sans-Serif, Helvectica;
 		font-size: 3em;
 		color: red;
-		margin-left: 210px;}
+text-align: center;}
+/*There is no need to change the position of the horizontal rule, and we left the rest of the code left-justified*/
+hr	{	z-index: 10;
+		margin-top: 30px;}
+h2	{	position: relative;
+		z-index: 11;
+		font-family: Sans-Serif, Helvectica;
+		font-size: 1em;
+		color: red;
+		text-align: center;}
 		
-p	{	font-family: Sans-Serif, Helvectica;
-			font-size: 1em;
-			margin-left: 210px;
-			
-			
-}
+p	{	z-index: 10;
+		font-family: Sans-Serif, Helvectica;
+		font-size: 1em;
+		}
 /* nocoursehero */
-.image	{ background-image: url("Ass-creed.jpg");
+/* I used the W3 website to learn how to center the image. I was close, I just needed to know the correct syntax */
+.image	{ display: block;
+		  z-index: 10;
 		  background-repeat: no-repeat;
-		  margin-left: 7em;}
-
-body	{background-color: #fdbfff;}
+		  margin-left: auto;
+		  margin-right: auto;
+		  
+}
+/*How do we make sure the border consistently wraps around the body?*/
+body	{ position: relative;
+	      display: block;
+	      z-index: 1;
+		  background-color: silver;
+		  border-style: ridge;
+		  border-color: red;
+		  border-width: 20px;
+		  margin-left:auto;
+	      margin-bottom:auto;}
