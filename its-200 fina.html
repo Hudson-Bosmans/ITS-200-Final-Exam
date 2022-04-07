@@ -1,39 +1,106 @@
-/* We have centered the h1 header */
-h1	{	position: relative;
-		font-family: Sans-Serif, Helvectica;
-		font-size: 3em;
-		color: red;
-text-align: center;}
-/*There is no need to change the position of the horizontal rule, and we left the rest of the code left-justified*/
-hr	{	z-index: 10;
-		margin-top: 30px;}
-h2	{	position: relative;
-		z-index: 11;
-		font-family: Sans-Serif, Helvectica;
-		font-size: 1em;
-		color: red;
-		text-align: center;}
+<!DOCTYPE html>
+
+ <html>
+	<head>
+		<meta charset="utf-8">
+		<title>ITS-200 FINAL</title>
+		<link rel="stylesheet" type="text/CSS" href="final-styles-1.css"/>
+		<div class = "borderSmall"/>
+		<script type = "text/javascript">
 		
-p	{	z-index: 10;
-		font-family: Sans-Serif, Helvectica;
-		font-size: 1em;
-		}
-/* nocoursehero */
-/* I used the W3 website to learn how to center the image. I was close, I just needed to know the correct syntax */
-.image	{ display: block;
-		  z-index: 10;
-		  background-repeat: no-repeat;
-		  margin-left: auto;
-		  margin-right: auto;
-		  
-}
-/*How do we make sure the border consistently wraps around the body?*/
-body	{ position: relative;
-	      display: block;
-	      z-index: 1;
-		  background-color: silver;
-		  border-style: ridge;
-		  border-color: red;
-		  border-width: 20px;
-		  margin-left:auto;
-	      margin-bottom:auto;}
+			/* IDK what to put here so im just gonna have the average length of the games*/
+			 var avgGmLngth, gameCount;
+			 var totalHours;
+			 var dayRel;
+			 var weekCT;
+			 
+			 /*daysRel just divides the total hours by 24 since there are 24 hours in a day*/
+			 gameCount = 24;
+			 avgGmLngth = 31;
+			 totalHours = gameCount*avgGmLngth;
+			 dayRel = totalHours/24
+			 weekCT = dayRel/7
+			 
+			 document.write("Fun Fact: It would take around ");
+			 document.write(totalHours);
+			 document.write(" hours to finish all the games!")
+			 document.write("<br />")
+			 document.write("That's a lot!");
+			 document.write(" That's equal to ");
+			 document.write(dayRel);
+			 document.write(" days of nonstop gaming!");
+		</script>
+			
+	</head>
+			
+			<div class = "border"/>
+			
+	<body>
+	<!--Here I am using the <div> tag to isolate the 'image' class. I did the same for the "border" class so that it was affected independently of the "body" styles in CSS-->
+		<div>
+			<img src = "Ass-creed.jpg" alt = "Image of Assassins Creed" class = "image">
+	    </div>
+
+		<!--We have no content yet but this is just the format for everything-->
+		
+		<h1> Facts About <em>Assassins Creed</em> </h1>
+		<hr>
+		
+			<h2> <em> "Everything is permitted, Nothing is true.” </em></h2>
+			
+			<p class = "Paragraph1"> Just as in Origins and Odyssey before it, the modern-day, sci-fi elements of Assassin’s Creed Valhalla’s story take a back seat to the historical stuff, which is this time in England during the 9th Century. Driven from Norway by endless wars and waning assets within the ninth century CE, players will lead Eivor's clan of Norsemen over the frigid North Ocean to the wealthy lands of England's broken kingdoms. Players must carve out a new future for their clan, remembering the heartless battling fashion of Viking warriors with a redone combat framework that incorporates the capacity to dual-wield weapons against a greater assortment of enemies than ever before. 
+			To secure assets players can lead attacks to choose areas utilizing their longship to win much-needed wealth and assets.
+			As the Vikings start to settle in their new domestic, they experience resistance from the Saxons counting Ruler Aelfred of Wessex, who denounces them as pagans and looks to be the sole ruler of a civilized Britain. 
+			Against all changes, Eivor must do what is vital to keep Valhalla inside reach Assassin’s Creed Valhalla begins with players taking control of Eivor as a child during a feast. 
+			It’s clear from the start that Eivor is the son of a Jarl, a chieftain. Unfortunately, the feast is interrupted by an attack from the rogue Viking warlord, Kjotve the Cruel.
+			</p>
+			
+			<p class = "Unordered-list-1"> Weapons include: 
+				<ul>
+					<li> Air Rifle </li>
+					<li> Arrow </li>
+					<li> Machete </li>
+					<li> Metal Cestus </li>
+					<li> Bayonet </li>
+					<li> Longbow </li>
+					<li> Whip </li>
+					<li> Tomohawk </li>
+					<li> Labrys </li>
+					<li> Kara </li>
+					<li> Kukri </li>
+				</ul>
+			</p>
+			
+			<p class = "Unorderd-list-2"> Locations Include: 
+				<ul class = "ULitems">
+					<li> Asgard </li>
+					<li> Helheim </li>
+					<li> Hurgheim </li>
+					<li> UnderWorld </li>
+					<li> Burgh Castle </li>
+					<li>Jötunheimr </li>
+				</ul>
+			</p>
+			<p class = "Paragraph2"> The more popular games of this series are Black Flag, Origins, and Odyssey. Black Flag Uses the DNA collected from Desmond Miles’s corpse. 
+			The plot is set in a fictional history of real-world occasions and takes after the millennia-old battle between the Professional killers, who battle to protect peace and free will, and the Templars, who crave peace through control. 
+			The surrounding story is set within the 21st century and portrays the player as an employee. The main story is set within the West Indies amid the Brilliant Age of Robbery from 1715 to 1722 and takes after notorious Welsh privateer Edward Kenway, granddad and father of Assassin's Statement of faith III her Ratonhnhaké. 
+			Origins is a  prequel to the Assassin's Ideology Establishment set in Egypt from 48 BC where Bayek, a Medjay, starts the establishment of the Assassin's Brotherhood. 
+			This diversion rotates around a hero Bayek of Siwa who seeks revenge for his son's death. He wishes that killing the executioner will bring his son's soul to peace. 
+			While the act of revealing the plot Bayek takes the help of a few extraordinary authentic figures like Caesar, and Cleopatra and makes a difference to achieve the position of royalty with the assistance of his spouse Aya. 
+			Between these incorporates an overwhelming act of drama, sympathy, and heroism. 
+			And at long last gets what they battled for and with the starting of Professional killers Ideology Brotherhood from where other arrangements of this establishment start. 
+			Odyssey tells a legendary history of the Peloponnesian War between Athens and Sparta from 431 to 422 BC. Players control a Straightforward hired fighter, who battles on both sides of the strife, as they endeavor to discover their family and kill the secretive Religion of Kosmos. 
+			The journey too proceeds with the story bend of Layla Hassan, a major character presented in Roots, who remembers the mercenary's recollections through the Ill will gadget as a portion of her endeavors to find an effective artifact for the sake of the Professional killer Brotherhood. 
+			Whereas most campaign missions take after the hired fighter as they rejoin their family and halt the Religion of Kosmos, extra questlines errand the players to defeat mystical animals from Atlantis and takedown cultists.
+			A bounty is set on the player character in the event that they commit wrongdoing such as taking or harming a blameless bystander in public. 
+			As with other Assassin's Ideology diversions, the player character is a master in free-running and can climb about all structures.
+			</p>
+
+			<p class = "link"> 
+			<!-- This is our fancy link to the Assassins Creed wepage-->
+			
+				<a href = "https://www.ubisoft.com/en-us/game/assassins-creed">View the Assassins Creed webpage!
+		
+			</p>
+	</body>
+</html>
