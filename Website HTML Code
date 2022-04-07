@@ -4,21 +4,51 @@
 	<head>
 		<meta charset="utf-8">
 		<title>ITS-200 FINAL</title>
-		<link rel="stylesheet" type="text/CSS" href="final-styles-1.css">
+		<link rel="stylesheet" type="text/CSS" href="final-styles-1.css"/>
+		<div class = "borderSmall"/>
 		<script type = "text/javascript">
-
-			document.write("<h2>This is written in the Javascript section of the code<h2>")
 		
+			/* IDK what to put here so im just gonna have the average length of the games*/
+			 var avgGmLngth, gameCount;
+			 var totalHours;
+			 var dayRel;
+			 var weekCT;
+			 
+			 /*daysRel just divides the total hours by 24 since there are 24 hours in a day*/
+			 gameCount = 24;
+			 avgGmLngth = 31;
+			 totalHours = gameCount*avgGmLngth;
+			 dayRel = totalHours/24
+			 weekCT = dayRel/7
+			 
+			 document.write("Fun Fact: It would take around ");
+			 document.write(totalHours);
+			 document.write(" hours to finish all the games!")
+			 document.write("<br />")
+			 document.write("That's a lot!");
+			 document.write(" That's equal to ");
+			 document.write(dayRel);
+			 document.write(" days or roughly ");
+			 /*I dont know how to round off, but I would like to round to two decimal places*/
+			 document.write(weekCT);
+			 document.write(" weeks of nonstop gaming!");
 		</script>
 			
 	</head>
+			
+			<div class = "border"/>
+			
 	<body>
-	<class = "image">
-	
+	<!--Here I am using the <div> tag to isolate the 'image' class. I did the same for the "border" class so that it was affected independetnyl of the "body" styles in CSS-->
+		<div>
+			<img src = "Ass-creed.jpg" alt = "Image of Assassins Creed" class = "image">
+	    </div>
+
 		<!--We have no content yet but this is just the format for everything-->
 		
 		<h1> This is the <em>Final</em> Project for ITS-200 </h1>
 		<hr>
+		
 			<h2> Here is where the content will go </h2>
 			
 			<p> There will be two paragraphs of text here </p>
@@ -45,3 +75,4 @@
 		
 			</p>
 	</body>
+</html>
