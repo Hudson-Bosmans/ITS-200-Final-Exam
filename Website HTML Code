@@ -1,78 +1,93 @@
-<!DOCTYPE html>
+/* We have centered the h1 header */
+h1	{	position: relative;
+		font-family: Sans-Serif, Helvectica;
+		font-size: 3em;
+		color: red;
+text-align: center;}
+/*There is no need to change the position of the horizontal rule, and we left the rest of the code left-justified*/
+hr	{	z-index: 10;
+		margin-top: 30px;}
+h2	{	position: relative;
+		z-index: 11;
+		font-family: Sans-Serif, Helvectica;
+		font-size: 1em;
+		color: red;
+		text-align: center;}
+h3	{	position: relative;
+		z-index: 11;
+		font-size: 1em;
+		color: red;
+		text-align: center;}
+		
+.Paragraph1	{	z-index: 10;
+				font-family: Sans-Serif, Helvectica;
+				font-size: 1em;
+				text-align: center;}
+/* nocoursehero */
+/* I used the W3 website to learn how to center the image. I was close, I just needed to know the correct syntax */
+.image	{ display: block;
+		  z-index: 10;
+		  background-repeat: no-repeat;
+		  margin-left: auto;
+		  margin-right: auto;
+		   border-style: double;
+		  border-color: #615e54;
+		  border-width: 5px;}
+/*How do we make sure the border consistently wraps around the body?*/
+body	{ position: relative;
+	      display: block;
+	      z-index: 1;
+		  background-color: silver;
+		  border-style: ridge;
+		  border-color: red;
+		  border-width: 20px;
+	      margin-bottom:0px;}
+		  
+.Unordered-list-1	{z-index: 1;
+					 display: block;
+					 position:relative;
+					 margin-left: 5px;
+					 margin-right: 20px}
+					 
+.Unorderd-list-2	{position:relative;
+					 margin-left: 5px}
+					 
+.Paragraph2	{	z-index: 10;
+				font-family: Sans-Serif, Helvectica;
+				font-size: 1em;
+				text-align: center;}
+				
+.link	{	text-align: center;} 
 
- <html>
-	<head>
-		<meta charset="utf-8">
-		<title>ITS-200 FINAL</title>
-		<link rel="stylesheet" type="text/CSS" href="final-styles-1.css"/>
-		<div class = "borderSmall"/>
-		<script type = "text/javascript">
-		
-			/* IDK what to put here so im just gonna have the average length of the games*/
-			 var avgGmLngth, gameCount;
-			 var totalHours;
-			 var dayRel;
-			 var weekCT;
-			 
-			 /*daysRel just divides the total hours by 24 since there are 24 hours in a day*/
-			 gameCount = 24;
-			 avgGmLngth = 31;
-			 totalHours = gameCount*avgGmLngth;
-			 dayRel = totalHours/24
-			 weekCT = dayRel/7
-			 
-			 document.write("Fun Fact: It would take around ");
-			 document.write(totalHours);
-			 document.write(" hours to finish all the games!")
-			 document.write("<br />")
-			 document.write("That's a lot!");
-			 document.write(" That's equal to ");
-			 document.write(dayRel);
-			 document.write(" days or roughly ");
-			 /*I dont know how to round off, but I would like to round to two decimal places*/
-			 document.write(weekCT);
-			 document.write(" weeks of nonstop gaming!");
-		</script>
-			
-	</head>
-			
-			<div class = "border"/>
-			
-	<body>
-	<!--Here I am using the <div> tag to isolate the 'image' class. I did the same for the "border" class so that it was affected independetnyl of the "body" styles in CSS-->
-		<div>
-			<img src = "Ass-creed.jpg" alt = "Image of Assassins Creed" class = "image">
-	    </div>
-
-		<!--We have no content yet but this is just the format for everything-->
-		
-		<h1> This is the <em>Final</em> Project for ITS-200 </h1>
-		<hr>
-		
-			<h2> Here is where the content will go </h2>
-			
-			<p> There will be two paragraphs of text here </p>
-			
-			<p> There are several aspects of the games: 
-				<ol>
-					<li> There are guns </li>
-					<li> There are people</li>
-					<li> The games are historical fiction </li>
-				</ol>
-			</p>
-			
-			<p> OHHHH SNAP!!! AN UNORDERED LIST??? 
-				<ul>
-					<li> lol </li>
-					<li> Here we go again </li>
-					<li> We can just add random words here that match the context</li>
-				</ul>
-			</p>
-			<p> 
-			<!-- This is our fancy link to the Assassins Creed wepage-->
-			
-				<a href = "https://www.ubisoft.com/en-us/game/assassins-creed">View the Assassins Creed webpage!
-		
-			</p>
-	</body>
-</html>
+.image-Valhalla	{display: block;
+		  z-index: 10;
+		  background-repeat: no-repeat;
+		  margin-left: auto;
+		  margin-right: auto;
+		   border-style: double;
+		  border-color: #615e54;
+		  border-width: 5px;
+		  margin-top: 20px}
+		  
+.image-Odyssey {display: block;
+		  z-index: 10;
+		  background-repeat: no-repeat;
+		  margin-left: auto;
+		  margin-right: auto;
+		   border-style: double;
+		  border-color: #615e54;
+		  border-width: 5px;
+		  }
+		 
+.click-image {display: block;
+		  z-index: 10;
+		  background-repeat: no-repeat;
+		  margin-left: auto;
+		  margin-right: auto;
+		  background-color: NULL;
+		  max-height: 15em;
+		  max-width: 15em;}
+		  
+.click-me	{font-size: 1em;
+			 text-align: center;
+			 color:#af30bf }
