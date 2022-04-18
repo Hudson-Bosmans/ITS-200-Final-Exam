@@ -9,24 +9,35 @@
 		<script type = "text/javascript">
 		
 			
-			/* These are the veraibles we made for the math operations, as well as the "userName" variable that for the prompted question*/
+			// These are the veraibles we made for the math operations, as well as the "userName" variable that for the prompted question
 			 var avgGmLngth, gameCount;
 			 var totalHours;
 			 var dayRel;
 			 var weekCT;
 			 var userName;
+			 var userGuess;
 			 
-			 /*Here we used basic math to convert the total number of hours into how many days of gameplay there are.*/
-			 gameCount = 24; /* gameCount refers to how mamy games ther are in the series */
-			 avgGmLngth = 31; /*avgGmLngth refers to the average amount of hours of gameplay there are in each of the games*/
-			 totalHours = gameCount*avgGmLngth; /*Multiply the amount of games by the average length of the games to get the rough amount of hours in all the games combined*/
-			 dayRel = totalHours/24 /*Divide the total hours by 24 to convert from hours of gameplay to days of gameplay since 24 hours = 1 day */
-			 userName = prompt ("Please, enter your name:") /*Here we ask for the users name, and it is displayed at the top right of the screen with some fun facts */
+			  //We are asking the user to gusss how many games there are in the series.
+			 userGuess = prompt("Guess how many Assassins Creed games there are:")
+				if (userGuess == 24){
+					alert("Spot on! There are 24 total games in the series.");
+					}
+				if (userGuess != 24){
+					alert("Close! There are 24 games in the series.");
+					}
+				
+				
+			 //Here we used basic math to convert the total number of hours into how many days of gameplay there are.
+			 gameCount = 24; // gameCount refers to how mamy games ther are in the series 
+			 avgGmLngth = 31; //avgGmLngth refers to the average amount of hours of gameplay there are in each of the games
+			 totalHours = gameCount*avgGmLngth; //Multiply the amount of games by the average length of the games to get the rough amount of hours in all the games combined
+			 dayRel = totalHours/24 //Divide the total hours by 24 to convert from hours of gameplay to days of gameplay since 24 hours = 1 day 
+			 userName = prompt ("Please, enter your name:") //Here we ask for the users name, and it is displayed at the top right of the screen with some fun facts 
 			 
-			 /*This chunk of code displays the math from the previous section */
-			 document.write ("Well, ");
+			 //This chunk of code displays the math from the previous section
+			 document.write ("Fun Fact, ");
 			 document.write (userName);
-			 document.write(", it would take around ");
+			 document.write(": it would take around ");
 			 document.write(totalHours);
 			 document.write(" hours to finish all the games!")
 			 document.write("<br />")
@@ -54,7 +65,8 @@
 			<h2> <em> "Everything is permitted, Nothing is true.” </em></h2>
 			
 			<!--The first paragraph talks about the game Assassins Creed: Valhalla-->
-			<p class = "Paragraph1"> Just as in Origins and Odyssey before it, the modern-day, sci-fi elements of Assassin’s Creed Valhalla’s story take a back seat to the historical stuff, which is this time in England during the 9th Century. Driven from Norway by endless wars and waning assets within the ninth century CE, players will lead Eivor's clan of Norsemen over the frigid North Ocean to the wealthy lands of England's broken kingdoms. Players must carve out a new future for their clan, remembering the heartless battling fashion of Viking warriors with a redone combat framework that incorporates the capacity to dual-wield weapons against a greater assortment of enemies than ever before. 
+			<p class = "Paragraph1">
+			Just as in Origins and Odyssey before it, the modern-day, sci-fi elements of Assassin’s Creed Valhalla’s story take a back seat to the historical stuff, which is this time in England during the 9th Century. Driven from Norway by endless wars and waning assets within the ninth century CE, players will lead Eivor's clan of Norsemen over the frigid North Ocean to the wealthy lands of England's broken kingdoms. Players must carve out a new future for their clan, remembering the heartless battling fashion of Viking warriors with a redone combat framework that incorporates the capacity to dual-wield weapons against a greater assortment of enemies than ever before. 
 			To secure assets players can lead attacks to choose areas utilizing their longship to win much-needed wealth and assets.
 			As the Vikings start to settle in their new domestic, they experience resistance from the Saxons counting Ruler Aelfred of Wessex, who denounces them as pagans and looks to be the sole ruler of a civilized Britain. 
 			Against all changes, Eivor must do what is vital to keep Valhalla inside reach Assassin’s Creed Valhalla begins with players taking control of Eivor as a child during a feast. 
@@ -68,6 +80,7 @@
 			<!--I love <div>'s-->	
 			<h3><em> Image of Assassins Creed Valhalla </em></h3>
 			<!--This is an unordered list about some weapons that can be found in the game-->
+			
 			<p class = "Unordered-list-1"> Weapons include: 
 				<ul>
 					<li> Air Rifle </li>
@@ -95,7 +108,7 @@
 					<li>Jötunheimr </li>
 				</ul>
 			</p>
-				
+			
 			<p class = "ordered-list"> Here are the top 5 most well-liked Assassins Creed games according to IGN:
 				<ol>
 					<li> Assassin's Creed: Black Flag</li>
@@ -105,13 +118,13 @@
 					<li> Assassin's Creed: Syndicate </li>
 				</ol>
 			</p>
-			<div>
+				<div>
 					<img src = "ass-creed-odyssey.jpg" alt = "Image of Assassins Creed Odyssey" class = "image-Odyssey">
 				</div>	
 			<h3><em> Image of Assassins Creed Odyssey </em></h3>
 			
 			<!--Paragraph 2 talks about some of the other games in the series-->
-			<p class = "Paragraph2"> The more popular games of this series are Black Flag, Origins, and Odyssey. Black Flag Uses the DNA collected from Desmond Miles’s corpse. 
+			<p class = "Paragraph2">	The more popular games of this series are Black Flag, Origins, and Odyssey. Black Flag Uses the DNA collected from Desmond Miles’s corpse. 
 			The plot is set in a fictional history of real-world occasions and takes after the millennia-old battle between the Professional killers, who battle to protect peace and free will, and the Templars, who crave peace through control. 
 			The surrounding story is set within the 21st century and portrays the player as an employee. The main story is set within the West Indies amid the Brilliant Age of Robbery from 1715 to 1722 and takes after notorious Welsh privateer Edward Kenway, granddad and father of Assassin's Statement of faith III her Ratonhnhaké. 
 			Origins is a  prequel to the Assassin's Ideology Establishment set in Egypt from 48 BC where Bayek, a Medjay, starts the establishment of the Assassin's Brotherhood. 
@@ -131,7 +144,7 @@
 			</div>
 			<!-- This is our fancy link to the Assassins Creed wepage; We just repalced the text with a link to another image and made an image hyperlink-->
 			<div>
-				<a href = "https://www.ubisoft.com/en-us/game/assassins-creed"><img src = "sword.png" class = "click-image">
+				<a href = "https://www.ubisoft.com/en-us/game/assassins-creed"><img src = "ass-creed-logo.png" class = "click-image">
 			</div>
 			
 	</body>
